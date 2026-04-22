@@ -74,7 +74,6 @@ function checkAnswer(btn, selected) {
     var correct = qData[curQ].a.trim();
     var btns = document.getElementsByClassName("opt-btn");
     
-    // সঠিক উত্তর হাইলাইট করা
     for (let b of btns) {
         b.disabled = true;
         if (b.innerText.trim() === correct) {
